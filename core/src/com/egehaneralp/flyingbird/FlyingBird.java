@@ -59,19 +59,19 @@ public class FlyingBird extends ApplicationAdapter {
 		}
 		if(state==1){
 
-			ex-=10;
+			/*ex-=10;
 			if(ex<=-150){
 				ex=2000;
 			}
-			/*
+			*/
 			for(int i=0;i<enemynum;i++){ //v=-17 nin altına yazdı.........
 				if(enemyX[i]<=-150){
-					enemyX[i]= enemyX[i] + enemynum*dist*2;
+					enemyX[i]= enemyX[i] + enemynum*dist*2 +150;
 				}
 				enemyX[i]-=10;
 				batch.draw(enemy1,enemyX[i],ey,bw,bh);
 
-			}*/
+			}
 
 			if(Gdx.input.justTouched()){  //bir kere daha basmak (zıplatmak)
 				v=-17;						// by = by-v;  (y ekseni koordinatini arttırmak) (-17)
