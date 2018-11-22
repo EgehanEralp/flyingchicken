@@ -25,7 +25,7 @@ public class FlyingBird extends ApplicationAdapter {
 
 
 	@Override
-	public void create () {          					// ATAMALAR YAPILIR
+	public void create () {          					// ATAMALAR YAPILIR   deneme
 		batch = new SpriteBatch();
 		img = new Texture("storyboard6.png");
 		bird = new Texture("frame-1.png");
